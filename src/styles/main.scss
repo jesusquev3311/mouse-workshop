@@ -14,7 +14,7 @@ $orange: #FA9B00;
     position: relative;
     padding-left: 24px;
     color: #000000;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     &:before{
         content: "";
         height: 9px;
@@ -168,4 +168,36 @@ $orange: #FA9B00;
 
 /* Listing */
 .listing{
+    &__card{
+        padding: 20px;
+        margin-bottom: 20px;
+        .card-header{
+            color: $main-bue;
+            font-size: 12px;
+            line-height: 15px;
+            font-weight: 700;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            box-shadow: none;
+        }
+        .card-content{
+            padding: 10px 0 0 0;
+            figure{
+                margin: 0;
+                max-height: 105px;
+                text-align: left;
+            }
+            &__title{
+                font-size: 26px;
+                line-height: 29px;
+                font-weight: 700;
+            }
+            &__type{
+                font-size: 17px;
+                line-height: 19.5px;
+            }
+        }
+    }
+
 }
