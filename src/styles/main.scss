@@ -1,0 +1,84 @@
+@import "../../node_modules/bulma/bulma.sass";
+
+/* main colors */
+$dark-blue:#00344F;
+$main-bue: #094B6D;
+$orange: #FA9B00; 
+
+/* Header style */
+.header{
+    &__top{
+        background-color: $dark-blue;
+        padding: 7px 16px;
+
+        .navbar{
+            display: flex;
+            justify-content: flex-end;
+            background-color: transparent;
+            .navbar-item{
+                color: #fff;
+                list-style: none;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 17.58px;
+                &:hover{
+                    background-color: #094B6D;
+                }
+
+                &:last-child{
+                    &:hover{
+                        background-color: transparent;
+                    }
+                }
+
+                span{
+                    margin: 0 10px;
+                    display: inline-block;
+                }
+                a{
+                    color: #fff;
+                    list-style: none;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    &__bottom{
+        padding: 30px 0;
+        background: #F7F7F7;
+        .navbar-item{
+            display: inline-block;
+            height: 32px;
+            width: 530px;
+            &:hover{
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+/* top banner section*/
+.top-ad{
+    text-align: center;
+    padding: 30px 0;
+    &__banner{
+        height: 90px;
+        width: 728px;
+        border: 1px solid;
+        display: inline-block;
+    }
+}
+
+/* Events */
+.events{
+    &__item{
+        max-height: 275px;
+        max-width: 221px;
+        .image{
+            height: 100%;
+        }
+    }
+}
