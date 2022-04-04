@@ -4,9 +4,534 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <title>Mouse Workshop</title>
 </head>
 <body>
-    <h1>Home</h1>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <nav class="navbar">
+                    <div class="navbar-menu navbar__desktop">
+                        <div class="navbar-start">
+                            <a class="navbar-item" href="https://www.rebelmouse.com/">Terms of Service</a>
+                            <a class="navbar-item" href="https://www.rebelmouse.com/">Privacy Policy</a>
+                            <a class="navbar-item" href="https://www.rebelmouse.com/">Trademark and Copyright</a>
+                            <a class="navbar-item" href="https://www.rebelmouse.com/">About Us</a>
+                            <a class="navbar-item" href="https://www.rebelmouse.com/">Advertise on Reliabilityweb.com</a>
+                            <a class="navbar-item" href="https://www.rebelmouse.com/">Steal These Graphics</a>
+                        </div>
+                    </div>
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            Visite nuestro sitio en Español
+                            <span>|</span>
+                            <a href="#">Español</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="container">
+                <!-- Mobile menu -->
+                <div class="navbar-brand  is-hidden-desktop ">
+                    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="">
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </a>
+    
+                    <a class="navbar-item" href="https://www.rebelmouse.com/">
+                        <img src="./assets/img/mobile-logo.png" alt="Reliabilityweb.com">
+                    </a>
+    
+                    <span class="icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
+                </div>
+
+                <div class="columns is-align-items-center">
+                    <div class="column is-three-fifths">
+                        <a class="navbar-item desktop-logo" href="https://www.rebelmouse.com/">
+                            <img src="./assets/img/desktop-logo.png" alt="Reliabilityweb.com" width="530px" height="32px">
+                        </a>
+                    </div>
+                    <div class="column">
+                        <form action="#" class="search">
+                            <div class="search__input">
+                                <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                                <input type="text" placeholder="Search">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="column">
+                        <div class="dropdown">
+                            <div class="dropdown-trigger">
+                                <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+                                <span>Explore</span>
+                                <span class="icon is-small">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                                </button>
+                            </div>
+                            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                            <div class="dropdown-content">
+                                <a href="#" class="dropdown-item">
+                                    Dropdown item
+                                </a>
+                                <a class="dropdown-item">
+                                    Other dropdown item
+                                </a>
+                                <a href="#" class="dropdown-item is-active">
+                                    Active dropdown item
+                                </a>
+                                <a href="#" class="dropdown-item">
+                                    Other dropdown item
+                                </a>
+                                <hr class="dropdown-divider">
+                                <a href="#" class="dropdown-item">
+                                    With a divider
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <button class="button is-rounded header__btn">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Top banner-->
+        <section id="top-ad" class="section top-ad">
+            <div class="container">
+                <div class="top-ad__banner">
+                    <a href="https://www.rebelmouse.com/">
+                        <img src="./assets/img/top-banner.png" alt="top-ad-banner">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events -->
+        <section id="events" class="events section">
+            <div class="container">
+                <h1 class="title section-title events__title">Events</h1>
+                <div class="columns">
+                    <div class="column">
+                        <div class="card events__item">
+                            <header class="card-header">
+                                <p class="card-header-title">Featured Event</p>
+                            </header>
+
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="assets/img/cmm.png" alt="https://www.rebelmouse.com/">
+                                </figure>
+                            </div>
+
+                            <div class="card-content">
+                                <div class="content">
+                                    <h3>January 1, 2021</h3>
+                                    <a href="https://www.rebelmouse.com/">learn more ...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card events__item">
+                            <header class="card-header">
+                                <p class="card-header-title">Featured Event</p>
+                            </header>
+
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="assets/img/imc.png" alt="Placeholder image">
+                                </figure>
+                            </div>
+
+                            <div class="card-content">
+                                <div class="content">
+                                    <h3>January 1, 2021</h3>
+                                    <a href="https://www.rebelmouse.com/">learn more ...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card events__item">
+                            <header class="card-header">
+                                <p class="card-header-title">Featured Event</p>
+                            </header>
+
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="assets/img/cmm.png" alt="Placeholder image">
+                                </figure>
+                            </div>
+
+                            <div class="card-content">
+                                <div class="content">
+                                    <h3>January 1, 2021</h3>
+                                    <a href="https://www.rebelmouse.com/">learn more ...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card events__item">
+                            <header class="card-header">
+                                <p class="card-header-title">Featured Event</p>
+                            </header>
+
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="assets/img/imc.png" alt="Placeholder image">
+                                </figure>
+                            </div>
+
+                            <div class="card-content">
+                                <div class="content">
+                                    <h3>January 1, 2021</h3>
+                                    <a href="https://www.rebelmouse.com/">learn more ...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card events__item">
+                            <header class="card-header">
+                                <p class="card-header-title">Featured Event</p>
+                            </header>
+
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="assets/img/cmm.png" alt="Placeholder image">
+                                </figure>
+                            </div>
+
+                            <div class="card-content">
+                                <div class="content">
+                                    <h3>January 1, 2021</h3>
+                                    <a href="https://www.rebelmouse.com/">learn more ...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- listing -->
+        <section id="listing" class="listing">
+            <div class="container">
+                <h2 class="title section-title listing__title">Listing</h2>
+                <div class="columns">
+                    <!-- listing-->
+                    <div class="column is-four-fifths">
+                        <div class="card listing__card">
+                            <a href="https://www.rebelmouse.com/">
+                                <header class="card-header">
+                                    <div class="card-header__date">
+                                        <i class="fa-solid fa-calendar"></i>
+                                        January 1 2021 - December 31 2021
+                                    </div>
+                                    <div class="card-header__location">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Marco Island, Florida 34145
+                                    </div>
+                                </header>
+
+                                <div class="card-content">
+                                    <div class="content">
+                                        <div class="columns">
+                                            <div class="column is-one-third">
+                                                <figure>
+                                                    <img src="./assets/img/worker.png" alt="worker" height="105px">
+                                                </figure>
+                                            </div>
+                                            <div class="column">
+                                                <h3 class="card-content__title">2021 - Reliabilityweb.com Certified Maintenance Manager (CMM) Workshops</h3>
+                                                <span class="card-content__type">Conference</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card listing__card">
+                            <a href="https://www.rebelmouse.com/">
+                                <header class="card-header">
+                                    <div class="card-header__date">
+                                        <i class="fa-solid fa-calendar"></i>
+                                        January 1 2021 - December 31 2021
+                                    </div>
+                                    <div class="card-header__location">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Marco Island, Florida 34145
+                                    </div>
+                                </header>
+
+                                <div class="card-content">
+                                    <div class="content">
+                                        <div class="columns">
+                                            <div class="column is-one-third">
+                                                <figure>
+                                                    <img src="./assets/img/worker.png" alt="worker" height="105px">
+                                                </figure>
+                                            </div>
+                                            <div class="column">
+                                                <h3 class="card-content__title">2021 - Reliabilityweb.com Certified Maintenance Manager (CMM) Workshops</h3>
+                                                <span class="card-content__type">Conference</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card listing__card">
+                            <a href="https://www.rebelmouse.com/">
+                                <header class="card-header">
+                                    <div class="card-header__date">
+                                        <i class="fa-solid fa-calendar"></i>
+                                        January 1 2021 - December 31 2021
+                                    </div>
+                                    <div class="card-header__location">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Marco Island, Florida 34145
+                                    </div>
+                                </header>
+
+                                <div class="card-content">
+                                    <div class="content">
+                                        <div class="columns">
+                                            <div class="column is-one-third">
+                                                <figure>
+                                                    <img src="./assets/img/worker.png" alt="worker" height="105px">
+                                                </figure>
+                                            </div>
+                                            <div class="column">
+                                                <h3 class="card-content__title">2021 - Reliabilityweb.com Certified Maintenance Manager (CMM) Workshops</h3>
+                                                <span class="card-content__type">Conference</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card listing__card">
+                            <a href="https://www.rebelmouse.com/">
+                                <header class="card-header">
+                                    <div class="card-header__date">
+                                        <i class="fa-solid fa-calendar"></i>
+                                        January 1 2021 - December 31 2021
+                                    </div>
+                                    <div class="card-header__location">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Marco Island, Florida 34145
+                                    </div>
+                                </header>
+
+                                <div class="card-content">
+                                    <div class="content">
+                                        <div class="columns">
+                                            <div class="column is-one-third">
+                                                <figure>
+                                                    <img src="./assets/img/worker.png" alt="worker" height="105px">
+                                                </figure>
+                                            </div>
+                                            <div class="column">
+                                                <h3 class="card-content__title">2021 - Reliabilityweb.com Certified Maintenance Manager (CMM) Workshops</h3>
+                                                <span class="card-content__type">Conference</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card listing__card">
+                            <a href="https://www.rebelmouse.com/">
+                                <header class="card-header">
+                                    <div class="card-header__date">
+                                        <i class="fa-solid fa-calendar"></i>
+                                        January 1 2021 - December 31 2021
+                                    </div>
+                                    <div class="card-header__location">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Marco Island, Florida 34145
+                                    </div>
+                                </header>
+
+                                <div class="card-content">
+                                    <div class="content">
+                                        <div class="columns">
+                                            <div class="column is-one-third">
+                                                <figure>
+                                                    <img src="./assets/img/worker.png" alt="worker" height="105px">
+                                                </figure>
+                                            </div>
+                                            <div class="column">
+                                                <h3 class="card-content__title">2021 - Reliabilityweb.com Certified Maintenance Manager (CMM) Workshops</h3>
+                                                <span class="card-content__type">Conference</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card listing__card">
+                            <a href="https://www.rebelmouse.com/">
+                                <header class="card-header">
+                                    <div class="card-header__date">
+                                        <i class="fa-solid fa-calendar"></i>
+                                        January 1 2021 - December 31 2021
+                                    </div>
+                                    <div class="card-header__location">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Marco Island, Florida 34145
+                                    </div>
+                                </header>
+
+                                <div class="card-content">
+                                    <div class="content">
+                                        <div class="columns">
+                                            <div class="column is-one-third">
+                                                <figure>
+                                                    <img src="./assets/img/worker.png" alt="worker" height="105px">
+                                                </figure>
+                                            </div>
+                                            <div class="column">
+                                                <h3 class="card-content__title">2021 - Reliabilityweb.com Certified Maintenance Manager (CMM) Workshops</h3>
+                                                <span class="card-content__type">Conference</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card listing__card">
+                            <a href="https://www.rebelmouse.com/">
+                                <header class="card-header">
+                                    <div class="card-header__date">
+                                        <i class="fa-solid fa-calendar"></i>
+                                        January 1 2021 - December 31 2021
+                                    </div>
+                                    <div class="card-header__location">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Marco Island, Florida 34145
+                                    </div>
+                                </header>
+
+                                <div class="card-content">
+                                    <div class="content">
+                                        <div class="columns">
+                                            <div class="column is-one-third">
+                                                <figure>
+                                                    <img src="./assets/img/worker.png" alt="worker" height="105px">
+                                                </figure>
+                                            </div>
+                                            <div class="column">
+                                                <h3 class="card-content__title">2021 - Reliabilityweb.com Certified Maintenance Manager (CMM) Workshops</h3>
+                                                <span class="card-content__type">Conference</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card listing__card">
+                            <a href="https://www.rebelmouse.com/">
+                                <header class="card-header">
+                                    <div class="card-header__date">
+                                        <i class="fa-solid fa-calendar"></i>
+                                        January 1 2021 - December 31 2021
+                                    </div>
+                                    <div class="card-header__location">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Marco Island, Florida 34145
+                                    </div>
+                                </header>
+
+                                <div class="card-content">
+                                    <div class="content">
+                                        <div class="columns">
+                                            <div class="column is-one-third">
+                                                <figure>
+                                                    <img src="./assets/img/worker.png" alt="worker" height="105px">
+                                                </figure>
+                                            </div>
+                                            <div class="column">
+                                                <h3 class="card-content__title">2021 - Reliabilityweb.com Certified Maintenance Manager (CMM) Workshops</h3>
+                                                <span class="card-content__type">Conference</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card listing__card">
+                            <a href="https://www.rebelmouse.com/">
+                                <header class="card-header">
+                                    <div class="card-header__date">
+                                        <i class="fa-solid fa-calendar"></i>
+                                        January 1 2021 - December 31 2021
+                                    </div>
+                                    <div class="card-header__location">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                        Marco Island, Florida 34145
+                                    </div>
+                                </header>
+
+                                <div class="card-content">
+                                    <div class="content">
+                                        <div class="columns">
+                                            <div class="column is-one-third">
+                                                <figure>
+                                                    <img src="./assets/img/worker.png" alt="worker" height="105px">
+                                                </figure>
+                                            </div>
+                                            <div class="column">
+                                                <h3 class="card-content__title">2021 - Reliabilityweb.com Certified Maintenance Manager (CMM) Workshops</h3>
+                                                <span class="card-content__type">Conference</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <!--sidebar-->
+                    <div class="column">
+                        <div class="listing__sidebar">
+                            <div class="banner">
+                                <figure>
+                                    <a href="https://www.rebelmouse.com/">
+                                        <img src="assets/img/side-banner.png" alt="sidebar-banner">
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

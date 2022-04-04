@@ -13,17 +13,38 @@ module.exports = {
             directory: path.join(process.cwd(), "dist"),
         },
         compress: true,
-        port: 8050
+        port: 8050,
+        watchFiles: ["src/**/*", "dist/**/*"],
     },
     module: {
-        rules:[{
-            test:/\.scss$/,
-            use: [
-                "style-loader",
-                "css-loader",
-                "sass-loader"
-            ]
-        }]
+        rules:[
+            {
+                test:/\.scss$/,
+                use: [
+                    "style-loader",
+                    "css-loader",
+                    "sass-loader"
+                ]
+            },
+            {
+                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                use: [
+                {
+                    loader: "file-loader",
+                    options: {}  
+                }
+                ]
+            },
+            {
+                test: /\.html$/,
+                exclude: /node_modules/,
+                use: "html-loader"
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+            },
+        ]
     },
     plugins: [
         new HtmlWebpackPlugin({
