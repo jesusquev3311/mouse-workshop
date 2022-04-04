@@ -26,8 +26,17 @@ $orange: #FA9B00;
     }
 }
 
+.sticky-padding-top{
+    padding-top: 190px;
+}
+
 /* Header style */
 .header{
+    max-height: 195px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 999999;
     &__top{
         background-color: $dark-blue;
         padding: 7px 16px;
@@ -168,6 +177,8 @@ $orange: #FA9B00;
 
 /* Listing */
 .listing{
+    background-color: #F6F6F6;
+    padding-top: 20px;
     &__card{
         padding: 20px;
         margin-bottom: 20px;
