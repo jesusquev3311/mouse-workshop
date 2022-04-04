@@ -1,5 +1,10 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const NodePolyfillPlugin = require('node-polyfill-webpack-plugin')
+const ENV = require("dotenv");
+
+const env = ENV.config().parsed;
 const path = require("path");
+const { DefinePlugin } = require("webpack");
 
 module.exports = {
     mode: "none",
@@ -15,6 +20,11 @@ module.exports = {
         compress: true,
         port: 8050,
         watchFiles: ["src/**/*", "dist/**/*"],
+    },
+    resolve: {
+        fallback: {
+            "fs": false
+        },
     },
     module: {
         rules:[
@@ -50,6 +60,18 @@ module.exports = {
         new HtmlWebpackPlugin({
             filename: "index.html",
             template: "./index.html"
+        }),
+        new HtmlWebpackPlugin({
+            filename: "part-one.html",
+            template: "./part-one.html"
+        }),
+        new HtmlWebpackPlugin({
+            filename: "part-two.html",
+            template: "./part-two.html"
+        }),
+        new NodePolyfillPlugin(),
+        new DefinePlugin({
+            "process.env": JSON.stringify(env),
         })
     ]
 };
