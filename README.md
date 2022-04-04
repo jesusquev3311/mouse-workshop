@@ -1,7 +1,7 @@
 ## Installation
 
 ### Requirenments
-- NodeJS ^12.19.0
+- NodeJS ^12.20.0
 - NPM or Yarn
 
 ### Setup
